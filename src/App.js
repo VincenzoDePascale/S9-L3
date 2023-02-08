@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import BookListComponent from "./components/BookListComponent";
+import Fantasy from "./json/fantasy.json";
+// import History from "../json/history.json";
+// import Horror from "../json/horror.json";
+// import Romance from "../json/romance.json";
+// import Scifi from "../json/scifi.json";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BookListComponent books={Fantasy} />
     </div>
   );
 }
